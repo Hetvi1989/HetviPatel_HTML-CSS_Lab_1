@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gmail Account</title>
+    <style>
+      body{
+            margin: 0%;
+            background-color: rgba(255, 255, 255, 0.548);
+        }
+        video{
+            position: fixed;
+        }
+        
+        h2{
+            text-align: center;
+        }
+        input{
+            width:350px;
+            font-size: 20px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            margin-left: 20px;
+            margin-top: 10px;
+
+        }
+
+        input:focus{
+            outline: none;
+            color: white;
+            background-color: rgba(70, 131, 180, 0.35);
+        }
+
+        button{
+            width: 100px;
+            height: 30px;
+            border-radius: 4px;
+            color: white;
+            background-color:rgb(164, 97, 228);
+            margin-left: 60px;
+            border: none;
+            
+
+        }
+        div{
+            position: absolute;
+            border: 2px solid;
+            color: white;
+            border-radius: 5px;
+            width:400px;
+            height: 250px;
+            margin: 100px;
+            margin-left: 400px;
+        }
+    </style>
+</head>
+<body>
+    <section id="block">
+        <video autoplay muted loop >
+            <source src="animation.mp4" type="video/mp4">
+        </video>
+    <div>
+    <form>
+        <h2> Create Gmail Account</h2>
+        <input type="text" title="Full Name" placeholder="Full Name" required>
+        <br>
+        <input type="number" title="Contact Number" placeholder="Contact Number" min="6666666666" max="9999999999" required>
+        <br>
+        <input type="email" title="Email Id" placeholder="Enter email id" required>
+        <br>
+        <br>
+        <button>Reset</button>
+        <button>Submit</button>
+    </form>
+</div>
+</section>
+    
+</body>
+</html>

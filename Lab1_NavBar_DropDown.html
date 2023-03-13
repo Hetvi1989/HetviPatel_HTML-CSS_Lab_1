@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Lab 1 Navigation menu bar with dropdown list</title>
+         <style>
+            body{
+                height: auto;
+                margin-top: 0%;
+                margin-left: 5%;
+                margin-right: 5%;
+            }
+            
+            header h1{
+                background-color: red;
+                margin:0% ;
+                padding: 20px;
+                text-align: center;
+            }
+            #nav-styling{
+                position: sticky;
+                top: 0%;
+                z-index: 1;
+            }
+
+             .menu-styling{
+                margin: 0%;
+                background-color: darkgray;
+            }
+
+            .menu-styling li a{
+                color: white;
+                font-size: 20px;
+                text-decoration: none;
+            }
+
+            .menu-styling li{
+                padding: 10px;
+                display: inline-block;
+            }
+
+            .menu-styling li:hover{
+                background-color: black;
+            }
+
+            .menu-styling li:nth-child(2):hover #dropdown-1, .menu-styling li:nth-child(3):hover #dropdown-2{
+                display: block;
+            }
+
+            #dropdown-1, #dropdown-2{
+                position: absolute;
+                width: auto;
+                max-width: 150px;
+                display: none;
+                top: 42.5px;
+                background-color: whitesmoke;
+                padding: 0%;
+            }
+
+            #dropdown-1 li, #dropdown-2 li{
+                display: block;
+            }
+
+            #dropdown-1 li:hover, #dropdown-2 li:hover{
+                background-color: gainsboro;
+            }
+
+            #dropdown-1 li a, #dropdown-2 li a{
+                color: steelblue;
+                font-size: 16px;
+            }
+        </style>
+    </head>
+<body>
+    <header><h1> Demo of Dropdown </h1> </header>
+        <nav id="nav-styling"> 
+            <ul class="menu-styling"> 
+                <li><a href="/link1">Link 1</a></li>
+                <li><a href="/link2">Link 2</a>
+                <ul id="dropdown-1">
+                    <li><a href="/dd_link1">DD_Link 1</a></li>
+                    <li><a href="/dd_link2">DD_Link 2</a></li>
+                    <li><a href="/dd_link3">DD_Link 3</a></li>
+                </ul>
+                </li>
+                <li><a href="/link3">Link 3</a>
+                <ul id="dropdown-2">
+                    <li><a href="/dd_link1">DD_Link 1</a></li>
+                    <li><a href="/dd_link2">DD_Link 2</a></li>
+                    <li><a href="/dd_link3">DD_Link 3</a></li>
+                </ul>
+                </li>
+            </ul>
+        </nav>
+    </body>
+</html>
